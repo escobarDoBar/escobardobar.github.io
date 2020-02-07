@@ -100,26 +100,13 @@
                 <div class="navigation__list-inner">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a class="navigation__link" href="/pt/">Página inicial</a>
+                            <a class="navigation__link" href="https://escobardobar.github.io">Página inicial</a>
                         </li>
                         <li class="navigation__item">
-                            <div class="nav-dropdown">
-                                <span class="navigation__link">Planetas<span class="carot carot--down carot--sm"></span></span>
-                            </div>
+                            <a class="navigation__link" href="https://escobardobar.github.io/repo/">Repositórios principais</a>
                         </li>
                         <li class="navigation__item">
-                            <a class="navigation__link" href="/pt/news">Notícias</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/pt/media">Mídia</a>
-                        </li>
-                        <li class="navigation__item">
-                            <div class="nav-dropdown">
-                                <span class="navigation__link">Informações sobre o Club<span class="carot carot--down carot--sm"></span></span>
-                            </div>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/pt/orion-trial">Orion</a>
+                            <a class="navigation__link" href="https://escobardobar.github.io/rpg/">RPG CyberPunk</a>
                         </li>
                     </ul>
                 </div>
