@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planetas do meu RPG <==3</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Orbitron:400,500,700,900">
+    <link rel="stylesheet" href="https://cdn01.bethesda.net/shared/core/3/global.css">
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/global.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap&subset=cyrillic,latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=cyrillic,latin-ext&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=cyrillic&display=swap">
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/5.css">
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/1.css">
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/3.css">
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/4.css">
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/6.css">
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/8.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://slayersclub.bethesda.net/dist/client/components/App/components/Navbar.js"></script>
+
+    <style>
+        body{
+            background-color: #0c1828;
+        }
+        .cyberpunk-background {
+            /*background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-Pw6ycCSsAbA%2FWXjhZpJ41xI%2FAAAAAAAAHKY%2FmMxSV3ObXH0LwW2GSyZEg1tZvZPkZbetQCLcBGAs%2Fs1600%2Fterra-plana-teoria.jpg&f=1&nofb=1") no-repeat;*/
+            background: #eee600;
+        }
+        .button{
+            border-color: #216477;
+        }
+        .button::before {
+            content: '';
+            display: block;
+            background: #52bedb -webkit-gradient(linear, left bottom, left top, from(#52bedb), to(#3b99b3));
+            background: #52bedb linear-gradient(0deg, #52bedb 0%, #3b99b3 100%);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .button::after {
+            border: 0;
+            border-top-color: initial;
+            border-top-style: initial;
+            border-top-width: 0px;
+            border-right-color: initial;
+            border-right-style: initial;
+            border-right-width: 0px;
+            border-bottom-color: initial;
+            border-bottom-style: initial;
+            border-bottom-width: 0px;
+            border-left-color: initial;
+            border-left-style: initial;
+            border-left-width: 0px;
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            background: #29829b;
+            -webkit-clip-path: polygon(10px 0, 100% 0, 100% 1px, 11px 1px, 1px 11px, 1px 100%, 0 100%, 0 10px);
+            clip-path: polygon(10px 0, 100% 0, 100% 1px, 11px 1px, 1px 11px, 1px 100%, 0 100%, 0 10px);
+            
+        }
+        .sc-tag{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);;
+        }
+        .button:hover, a:hover .button {
+            -webkit-filter: brightness(1.15) drop-shadow(0 0 5px #246d81);
+            filter: brightness(1.15) drop-shadow(0 0 5px #246d81);
+        }
+        .preto{
+            color: black;
+        }
+        .crop-corners{
+            height: 480px;
+        }
+        .nivel-3{
+            color:rgb(177, 0, 0);
+        }
+        .nivel-2{
+            color:rgb(196, 127, 0)
+        }
+        .nivel-1{
+            color: #52bedb;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+
+    <div class="navbar">
+        <nav class="navigation">
+            <div class="navigation__list-outer">
+                <div class="navigation__list-inner">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/pt/">Página inicial</a>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="nav-dropdown">
+                                <span class="navigation__link">Planetas<span class="carot carot--down carot--sm"></span></span>
+                            </div>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/pt/news">Notícias</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/pt/media">Mídia</a>
+                        </li>
+                        <li class="navigation__item">
+                            <div class="nav-dropdown">
+                                <span class="navigation__link">Informações sobre o Club<span class="carot carot--down carot--sm"></span></span>
+                            </div>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/pt/orion-trial">Orion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <ul class="navigation__list navigation__list--no-dividers">
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--featured" style="color: black;">CYBERPUNK</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  
+  <!-- Page Content -->
+  <div class="container" style="width: 1400px;">
+    <div class="row">
+
+        <!-- Proxima B -->
+        <div class="layout-column col-xl-5 col-md-6 mb-4">
+            <div class="module">
+                <div class="crop-corners">
+                    <div class="crop-corners__inner crop-corners__inner--both">
+                        <div class="backdrop cyberpunk-background">
+                            <div class="sc-primary-cta" id="proxima-b">
+                                <div class="sc-primary-cta__content">
+                                    <div class="heading heading--14 u-uppercase heading--spacing sc-tag">
+                                        <img src="https://lh3.googleusercontent.com/proxy/64hb04XKwlvVzvRygsFgc8eDPnjbgyGeVs0WKmPsrrOE_vHV7OpfKmVURjh2XsskNbGvlNTnyFtS6TRnw9bxrPIR-kOaBho" alt="" class="sc-tag__icon" width="18">
+                                            Próxima B
+                                    </div>
+                                    <header class="sc-primary-cta__header">
+                                        <h1 class="heading heading--46 nivel-1">Habitado</h1>
+                                    </header><div class="text sc-primary-cta__body">
+                                        <div class="module">
+                                            <p style="color: #0c0b0b">Com o projeto de expansionismo acontecedo junto à descoberta do planeta Próxima B, a maioria das pessoas conseguiram um passe para lá, os ricos praticamente possuíam as naves que os levariam, e a classe média pra baixo foram como trabalhadores. Agora Próxima B é a nova Terra.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-primary-cta__options">
+                                    <ul class="options">
+                                        <li class="options__item">
+                                            <button class="button">Mais sobre Próxima B</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terra -->
+        <div class="layout-column col-xl-5 col-md-6 mb-4">
+            <div class="module">
+                <div class="crop-corners">
+                    <div class="crop-corners__inner crop-corners__inner--both">
+                        <div class="backdrop cyberpunk-background">
+                            <div class="sc-primary-cta" id="terra">
+                                <div class="sc-primary-cta__content">
+                                    <div class="heading heading--14 u-uppercase heading--spacing sc-tag">
+                                        <img src="https://image.flaticon.com/icons/png/512/44/44386.png" alt="" class="sc-tag__icon" width="18">
+                                            Terra
+                                    </div>
+                                    <header class="sc-primary-cta__header">
+                                        <h1 class="heading heading--46 nivel-1">Habitado</h1>
+                                    </header><div class="text sc-primary-cta__body">
+                                        <div class="module">
+                                            <p style="color: #0c0b0b">A terra ficou sem recursos para as grandes empresas continuarem seus trabalhos nos anos 2022. Como a expensão para outros planetas havia começado em 2020 poucas pessoas ficaram, dentre elas drogados, veganos e feministas e seres humanos que buscavam restaurar a terra.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-primary-cta__options">
+                                    <ul class="options">
+                                        <li class="options__item">
+                                            <button class="button">Mais sobre a Terra</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marte -->
+        <div class="layout-column col-xl-5 col-md-6 mb-4">
+            <div class="module">
+                <div class="crop-corners">
+                    <div class="crop-corners__inner crop-corners__inner--both">
+                        <div class="backdrop cyberpunk-background">
+                            <div class="sc-primary-cta" id="marte">
+                                <div class="sc-primary-cta__content">
+                                    <div class="heading heading--14 u-uppercase heading--spacing sc-tag">
+                                        <img src="https://i.pinimg.com/originals/1e/0b/9d/1e0b9dd9a600bb076793b7ebb0410a09.png" alt="" class="sc-tag__icon" width="18">
+                                            Marte
+                                    </div>
+                                    <header class="sc-primary-cta__header">
+                                        <h1 class="heading heading--46 nivel-3" >Habitado</h1>
+                                    </header><div class="text sc-primary-cta__body">
+                                        <div class="module">
+                                            <p style="color: #0c0b0b">Após o começo do expansionismo em 2020 empresas militares se estabeleceram para começarem a fazer testes com novas tecnologias em um ambiente seguro, porém devido à problemas internos desconhecidos o lugar foi tomado por monstros cyborgs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-primary-cta__options">
+                                    <ul class="options">
+                                        <li class="options__item">
+                                            <button class="button">Mais sobre Marte</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Caravan -->
+        <div class="layout-column col-xl-5 col-md-6 mb-4">
+            <div class="module">
+                <div class="crop-corners">
+                    <div class="crop-corners__inner crop-corners__inner--both">
+                        <div class="backdrop cyberpunk-background">
+                            <div class="sc-primary-cta" id="caravan">
+                                <div class="sc-primary-cta__content">
+                                    <div class="heading heading--14 u-uppercase heading--spacing sc-tag">
+                                        <img src="https://images.vexels.com/media/users/3/152570/isolated/preview/425035eea8f0d97015ac66c6763d58e8---cone-do-planeta-netuno-by-vexels.png" alt="" class="sc-tag__icon" width="18">
+                                            Caravan
+                                    </div>
+                                    <header class="sc-primary-cta__header">
+                                        <h1 class="heading heading--46 nivel-3">Inabitado</h1>
+                                    </header><div class="text sc-primary-cta__body">
+                                        <div class="module">
+                                            <p style="color: #0c0b0b">Planeta nunca explorado ou pesquisado devido ao seu ambiente inóspito impossibilitar a existência da vida, inclusive a humana mesmo que com a ajuda da tecnológica.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sc-primary-cta__options">
+                                    <ul class="options">
+                                        <li class="options__item">
+                                            <button class="button">Mais sobre Caravan</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+  </div>
+  <!-- /.container -->
+
+</body>
+</html>
