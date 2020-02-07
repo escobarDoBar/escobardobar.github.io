@@ -22,7 +22,7 @@
 
     <style>
         body{
-            background-color: #0c1828;
+            background-color: #000000;
         }
         .cyberpunk-background {
             /*background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-Pw6ycCSsAbA%2FWXjhZpJ41xI%2FAAAAAAAAHKY%2FmMxSV3ObXH0LwW2GSyZEg1tZvZPkZbetQCLcBGAs%2Fs1600%2Fterra-plana-teoria.jpg&f=1&nofb=1") no-repeat;*/
@@ -92,6 +92,34 @@
             font-family: Cyberpunk;
             src: url(https://escobardobar.github.io/fontes/cyberpunk.ttf);
         }
+        .navigation:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -21px;
+            background: url(https://www.cyberpunk.net/build/images/home/razor-bottom-yellow-d44fb6b7.svg) repeat-x top;
+            height: 30px;
+        }
+        .navbar{
+            background-color: #fcee0a;
+        }
+        .navigation{
+            background-color: #fcee0a;
+        }
+        .navigation__item{
+            border-color: black;
+            border-width: 0px 1px 0 0;
+        }
+        .navigation__item__start{
+            border-width: 0 1px 0 0;
+        }
+        .navigation__item__end{
+            border-width: 0 0 0 0;
+        }
+        .navigation__item p, .navigation__item a, .navigation__item spam{
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -103,7 +131,7 @@
             <div class="navigation__list-outer">
                 <div class="navigation__list-inner">
                     <ul class="navigation__list">
-                        <li class="navigation__item">
+                        <li class="navigation__item navigation__item__start">
                             <a class="navigation__link" href="https://escobardobar.github.io/rpg/">RPG CyberPunk</a>
                         </li>
                         <li class="navigation__item">
@@ -112,7 +140,7 @@
                         <li class="navigation__item">
                             <a class="navigation__link" href="https://escobardobar.github.io/rpg/armas/">Armas</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="navigation__item navigation__item__end">
                             <a class="navigation__link" href="https://escobardobar.github.io/rpg/implantes/">Implantes Cibernéticos</a>
                         </li>
                     </ul>
@@ -121,7 +149,7 @@
             <div>
                 <ul class="navigation__list navigation__list--no-dividers">
                     <li class="navigation__item">
-                        <a class="navigation__link navigation__link--featured" style="font-size: 30px; font-family: Cyberpunk; color: black;">CyberPunk</a>
+                        <a class="navigation__link" style="font-size: 30px; font-family: Cyberpunk; color: black;">CyberPunk</a>
                     </li>
                 </ul>
             </div>
@@ -129,8 +157,8 @@
     </div>
   
   <!-- Page Content -->
-  <div class="container" style="width: 1400px;">
-    <div class="row">
+  <div class="container mt-5" >
+    <div class="row" >
 
         <!-- Proxima B -->
         <div class="layout-column col-xl-5 col-md-6 mb-4">
@@ -145,8 +173,9 @@
                                             Próxima B
                                     </div>
                                     <header class="sc-primary-cta__header">
-                                        <h1 class="heading heading--46 nivel-1">Habitado</h1>
-                                    </header><div class="text sc-primary-cta__body">
+                                        <h1 class="heading heading--46 preto">Habitado</h1>
+                                    </header>
+                                    <div class="text sc-primary-cta__body">
                                         <div class="module">
                                             <p style="color: #0c0b0b">Com o projeto de expansionismo acontecedo junto à descoberta do planeta Próxima B, a maioria das pessoas conseguiram um passe para lá, os ricos praticamente possuíam as naves que os levariam, e a classe média pra baixo foram como trabalhadores. Agora Próxima B é a nova Terra.</p>
                                         </div>
@@ -155,7 +184,9 @@
                                 <div class="sc-primary-cta__options">
                                     <ul class="options">
                                         <li class="options__item">
-                                            <button class="button">Mais sobre Próxima B</button>
+                                            <header class="sc-primary-cta__header">
+                                                <h1 class="heading heading--46 nivel-1">Nível 1</h1>
+                                            </header>
                                         </li>
                                     </ul>
                                 </div>
@@ -179,8 +210,9 @@
                                             Terra
                                     </div>
                                     <header class="sc-primary-cta__header">
-                                        <h1 class="heading heading--46 nivel-1">Habitado</h1>
-                                    </header><div class="text sc-primary-cta__body">
+                                        <h1 class="heading heading--46 preto">Habitado</h1>
+                                    </header>
+                                    <div class="text sc-primary-cta__body">
                                         <div class="module">
                                             <p style="color: #0c0b0b">A terra ficou sem recursos para as grandes empresas continuarem seus trabalhos nos anos 2022. Como a expensão para outros planetas havia começado em 2020 poucas pessoas ficaram, dentre elas drogados, veganos e feministas e seres humanos que buscavam restaurar a terra.</p>
                                         </div>
@@ -189,7 +221,9 @@
                                 <div class="sc-primary-cta__options">
                                     <ul class="options">
                                         <li class="options__item">
-                                            <button class="button">Mais sobre a Terra</button>
+                                            <header class="sc-primary-cta__header">
+                                                <h1 class="heading heading--46 nivel-1">Nível 1</h1>
+                                            </header>
                                         </li>
                                     </ul>
                                 </div>
@@ -213,8 +247,9 @@
                                             Marte
                                     </div>
                                     <header class="sc-primary-cta__header">
-                                        <h1 class="heading heading--46 nivel-3" >Habitado</h1>
-                                    </header><div class="text sc-primary-cta__body">
+                                        <h1 class="heading heading--46 preto" >Habitado</h1>
+                                    </header>
+                                    <div class="text sc-primary-cta__body">
                                         <div class="module">
                                             <p style="color: #0c0b0b">Após o começo do expansionismo em 2020 empresas militares se estabeleceram para começarem a fazer testes com novas tecnologias em um ambiente seguro, porém devido à problemas internos desconhecidos o lugar foi tomado por monstros cyborgs.</p>
                                         </div>
@@ -223,7 +258,9 @@
                                 <div class="sc-primary-cta__options">
                                     <ul class="options">
                                         <li class="options__item">
-                                            <button class="button">Mais sobre Marte</button>
+                                            <header class="sc-primary-cta__header">
+                                                <h1 class="heading heading--46 nivel-3" >Nível 3</h1>
+                                            </header>
                                         </li>
                                     </ul>
                                 </div>
@@ -247,8 +284,9 @@
                                             Caravan
                                     </div>
                                     <header class="sc-primary-cta__header">
-                                        <h1 class="heading heading--46 nivel-3">Inabitado</h1>
-                                    </header><div class="text sc-primary-cta__body">
+                                        <h1 class="heading heading--46 preto">Inabitado</h1>
+                                    </header>
+                                    <div class="text sc-primary-cta__body">
                                         <div class="module">
                                             <p style="color: #0c0b0b">Planeta nunca explorado ou pesquisado devido ao seu ambiente inóspito impossibilitar a existência da vida, inclusive a humana mesmo que com a ajuda da tecnológica.</p>
                                         </div>
@@ -257,7 +295,9 @@
                                 <div class="sc-primary-cta__options">
                                     <ul class="options">
                                         <li class="options__item">
-                                            <button class="button">Mais sobre Caravan</button>
+                                            <header class="sc-primary-cta__header">
+                                                <h1 class="heading heading--46 nivel-3">Nível 3</h1>
+                                            </header>
                                         </li>
                                     </ul>
                                 </div>

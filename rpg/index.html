@@ -22,7 +22,7 @@
 
     <style>
         body{
-            background-color: #0c1828;
+            background-color: #131212;
         }
         .cyberpunk-background {
             /*background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-Pw6ycCSsAbA%2FWXjhZpJ41xI%2FAAAAAAAAHKY%2FmMxSV3ObXH0LwW2GSyZEg1tZvZPkZbetQCLcBGAs%2Fs1600%2Fterra-plana-teoria.jpg&f=1&nofb=1") no-repeat;*/
@@ -92,6 +92,34 @@
             font-family: Cyberpunk;
             src: url(https://escobardobar.github.io/fontes/cyberpunk.ttf);
         }
+        .navigation:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -21px;
+            background: url(https://www.cyberpunk.net/build/images/home/razor-bottom-yellow-d44fb6b7.svg) repeat-x top;
+            height: 30px;
+        }
+        .navbar{
+            background-color: #fcee0a;
+        }
+        .navigation{
+            background-color: #fcee0a;
+        }
+        .navigation__item{
+            border-color: black;
+            border-width: 0px 1px 0 0;
+        }
+        .navigation__item__start{
+            border-width: 0 1px 0 0;
+        }
+        .navigation__item__end{
+            border-width: 0 0 0 0;
+        }
+        .navigation__item p, .navigation__item a, .navigation__item spam{
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -103,11 +131,8 @@
             <div class="navigation__list-outer">
                 <div class="navigation__list-inner">
                     <ul class="navigation__list">
-                        <li class="navigation__item">
+                        <li class="navigation__item navigation__item__start">
                             <a class="navigation__link" href="https://escobardobar.github.io">Página inicial</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="https://escobardobar.github.io/repo/">Repositórios principais</a>
                         </li>
                         <li class="navigation__item">
                             <a class="navigation__link" href="https://escobardobar.github.io/rpg/planetas/">Planetas</a>
@@ -118,7 +143,7 @@
                         <li class="navigation__item">
                             <a class="navigation__link" href="https://escobardobar.github.io/rpg/armas/">Armas</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="navigation__item navigation__item__end">
                             <a class="navigation__link" href="https://escobardobar.github.io/rpg/implantes/">Implantes Cibernéticos</a>
                         </li>
                     </ul>
@@ -127,7 +152,7 @@
             <div>
                 <ul class="navigation__list navigation__list--no-dividers">
                     <li class="navigation__item">
-                        <a class="navigation__link navigation__link--featured" style="font-family: Cyberpunk; color: black;">CyberPunk</a>
+                        <a class="navigation__link" style="font-size: 30px; font-family: Cyberpunk; color: black;">CyberPunk</a>
                     </li>
                 </ul>
             </div>
