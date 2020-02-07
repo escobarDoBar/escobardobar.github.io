@@ -20,107 +20,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://slayersclub.bethesda.net/dist/client/components/App/components/Navbar.js"></script>
 
-    <style>
-        body{
-            background-color: #0c1828;
-        }
-        .cyberpunk-background {
-            /*background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-Pw6ycCSsAbA%2FWXjhZpJ41xI%2FAAAAAAAAHKY%2FmMxSV3ObXH0LwW2GSyZEg1tZvZPkZbetQCLcBGAs%2Fs1600%2Fterra-plana-teoria.jpg&f=1&nofb=1") no-repeat;*/
-            background: #eee600;
-        }
-        .button{
-            border-color: #216477;
-        }
-        .button::before {
-            content: '';
-            display: block;
-            background: #52bedb -webkit-gradient(linear, left bottom, left top, from(#52bedb), to(#3b99b3));
-            background: #52bedb linear-gradient(0deg, #52bedb 0%, #3b99b3 100%);
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-        }
-        .button::after {
-            border: 0;
-            border-top-color: initial;
-            border-top-style: initial;
-            border-top-width: 0px;
-            border-right-color: initial;
-            border-right-style: initial;
-            border-right-width: 0px;
-            border-bottom-color: initial;
-            border-bottom-style: initial;
-            border-bottom-width: 0px;
-            border-left-color: initial;
-            border-left-style: initial;
-            border-left-width: 0px;
-            border-image-source: initial;
-            border-image-slice: initial;
-            border-image-width: initial;
-            border-image-outset: initial;
-            border-image-repeat: initial;
-            background: #29829b;
-            -webkit-clip-path: polygon(10px 0, 100% 0, 100% 1px, 11px 1px, 1px 11px, 1px 100%, 0 100%, 0 10px);
-            clip-path: polygon(10px 0, 100% 0, 100% 1px, 11px 1px, 1px 11px, 1px 100%, 0 100%, 0 10px);
-            
-        }
-        .sc-tag{
-            border-bottom: 1px solid rgba(0, 0, 0, 0.4);;
-        }
-        .button:hover, a:hover .button {
-            -webkit-filter: brightness(1.15) drop-shadow(0 0 5px #246d81);
-            filter: brightness(1.15) drop-shadow(0 0 5px #246d81);
-        }
-        .preto{
-            color: black;
-        }
-        .crop-corners{
-            height: 480px;
-        }
-        .nivel-3{
-            color:rgb(177, 0, 0);
-        }
-        .nivel-2{
-            color:rgb(196, 127, 0)
-        }
-        .nivel-1{
-            color: #52bedb;
-        }
-    </style>
 </head>
 <body>
-
-<!-- Header -->
-
-    <div class="navbar">
-        <nav class="navigation">
-            <div class="navigation__list-outer">
-                <div class="navigation__list-inner">
-                    <ul class="navigation__list">
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="https://escobardobar.github.io">Página inicial</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="https://escobardobar.github.io/repo/">Repositórios principais</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="https://escobardobar.github.io/rpg/">RPG CyberPunk</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <ul class="navigation__list navigation__list--no-dividers">
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--featured" style="color: black;">CYBERPUNK</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-  
  
+    #O que quero fazer com esse site
+    - Hostear um site com minhas informações
+    - Fazer uma forma mais bonita para acessar meus repositórios
+    - Usar o host para manter dados sobre o meu RPG CyberPunk
+
 </body>
 </html>
