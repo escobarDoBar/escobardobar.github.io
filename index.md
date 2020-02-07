@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Planetas do meu RPG <==3</title>
+    <title>EscobarDoBar</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Orbitron:400,500,700,900">
     <link rel="stylesheet" href="https://cdn01.bethesda.net/shared/core/3/global.css">
     <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/global.css">
