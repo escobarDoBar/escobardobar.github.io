@@ -2,23 +2,33 @@
 <html>
 <head>
     <title>Planetas do meu RPG <==3</title>
+    <!-- Fontes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Orbitron:400,500,700,900">
-    <link rel="stylesheet" href="https://cdn01.bethesda.net/shared/core/3/global.css">
-    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/global.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap&subset=cyrillic,latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=cyrillic,latin-ext&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=cyrillic&display=swap">
+
+    <!-- Cyberpunk -->
+    <script src="https://www.cyberpunk.net/build/js/home-c3c5fdd2fa4eae05fd16.js"></script>
+    <script src="https://www.cyberpunk.net/build/js/1-65938247f7118f916b88.js"></script>
+    <script src="https://www.cyberpunk.net/build/js/0-5fd3f2ac59753b4e8395.js"></script>
+    <script src="https://www.cyberpunk.net/build/js/runtime-74eef81eb83ee14b1927.js"></script>
+    <link rel="stylesheet" href="https://www.cyberpunk.net/build/css/home-45ac274a856f88f8ddbf.css">
+
+
+    <!-- Doom -->
     <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/5.css">
     <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/1.css">
     <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/3.css">
     <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/4.css">
-    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/6.css">
     <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/8.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/6.css">
+    <link rel="stylesheet" href="https://slayersclub.bethesda.net/dist/client/global.css">
+    <link rel="stylesheet" href="https://cdn01.bethesda.net/shared/core/3/global.css">
     <script src="https://slayersclub.bethesda.net/dist/client/components/App/components/Navbar.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style>
         body{
@@ -76,6 +86,9 @@
         .preto{
             color: black;
         }
+        .azul{
+            color: #3b99b3;
+        }
         .crop-corners{
             height: 480px;
         }
@@ -124,6 +137,23 @@
             color: black;
             border-color: black;
         }
+        .l-text__up{
+            font-family: BlenderProBold, sans-serif;
+            font-size: 50px;
+        }
+        .l-text__down{
+            font-family: BlenderProBold, sans-serif;
+            font-size: 40px;
+        }
+        .divisor{
+            border-color: #3b99b3;
+            max-width: 30%;
+            margin-top: -20px;
+            margin-bottom: -10px;
+        }
+        .l-intro__box h2{
+            font-size: 60px;
+        }
     </style>
 </head>
 <body>
@@ -162,12 +192,82 @@
             </div>
         </nav>
     </div>
-  
-  <!-- Page Content -->
-  <div class="container" style="width: 1400px;">
-    
-  </div>
-  <!-- /.container -->
 
+    <header class="l-main mt-1">
+        <section class="l-main__section l-quotes">
+            <div class="container text-center">
+                <p class="l-text__up azul">Bem vindo ao futuro!</p>
+                <center><hr class="divisor"></center>
+                <span class="l-text__down azul">~ The Hackerzinho</span>
+            </div>        
+        </section>
+    </header>
+
+    <main class="l-main">
+        <section class="l-main__section l-intro">
+            <div class="l-intro__bg">
+                <div class="l-intro__box">
+                    <h2>APENAS SER NÃO É O SUFICIENTE, VOCÊ TEM QUE SEERRR!</h2>
+                    <p>Cyberpunk é um universo com várias histórias de ação e aventura num universo totalmente explorével.
+                        Você começará em Night City uma megalópole obcecada por poder, glamour e biomodificações. 
+                        Você jogará com o personagem criado por você :) que se juntará com mais alguns jogadores para 
+                        realizar uma missão que ainda não criei :). Você poderá instalar vários implantes cibernéticos e 
+                        evoluir o seu personagem de acordo com a sua vontade e dinheiro ou pedaço de carne :). 
+                    </p>
+                </div>
+                <p class="l-intro__pm">Cyberpunk é um universo com várias histórias de ação e aventura num universo totalmente explorével.
+                    Você começará em Night City uma megalópole obcecada por poder, glamour e biomodificações. 
+                    Você jogará com o personagem criado por você :) que se juntará com mais alguns jogadores para 
+                    realizar uma missão que ainda não criei :). Você poderá instalar vários implantes cibernéticos e 
+                    evoluir o seu personagem de acordo com a sua vontade e dinheiro ou pedaço de carne :).</p>
+            </div>
+        </section>
+
+        <div class="l-newsletter-bg">
+            <form name="newsletter" method="post" action="/pt-br/newsletter-signup" class="l-newsletter" novalidate="novalidate" abineguid="90FFF7E6B5B6450192251640C8C994DE">
+                <section id="newsletter-socials" class="l-main__section l-newsletter-socials">
+                    <div>
+                        <div>
+                            <h2>
+                                <strong>Sempre primeiro!</strong>
+                                <span>Entre na minha mesa EscobarDoBar.</span>
+                            </h2>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+
+        <section class="l-main__section l-features pt-5">
+            <div class="l-features__wrapper">
+                <div class="l-features__box">
+                    <div class="l-features__box-bg">
+                        <div class="l-features__h">
+                            <h3>JOGUE COMO UMA VELINHA CIBERNÉTICA</h3>
+                        </div>
+                    </div>
+                    <p>Torne-se um cyberpunk — um mercenário urbano equipado com melhorias cibernéticas — e construa a sua lenda no Cyberpunk.</p>
+                </div>
+                <div class="l-features__box">
+                    <div class="l-features__box-bg">
+                        <div class="l-features__h">
+                            <h3>VIVA NA CIDADE DO FUTURO</h3>
+                        </div>
+                    </div>
+                    <p>Entre no enorme mundo aberto de Night City, um lugar que define novos padrões no quesito de complexidade, profundidade e visual.</p>
+                </div>
+                <div class="l-features__box">
+                    <div class="l-features__box-bg">
+                        <div class="l-features__h">
+                            <h3>ROUBE O IMPLANTE QUE CONCEDE A VIDA ETERNA</h3>
+                        </div>
+                    </div>
+                    <p>Aceite o trabalho mais arriscado da sua vida e corra atrás de um protótipo de implante com a chave da imortalidade.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <!-- /.container -->
 </body>
 </html>
