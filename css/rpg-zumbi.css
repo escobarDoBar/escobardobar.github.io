@@ -20,6 +20,10 @@ nav a{
 p a, p span{
   color: #fec107 !important;
 }
+
+.especial{
+  color: lightgray !important;
+}
 .zombie-img{
   width: 700px;
 }
