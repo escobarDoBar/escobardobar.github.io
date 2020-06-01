@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Zombie;
+    src: url(../fontes/zombie.ttf);
+}
+@font-face {
+    font-family: theLast;
+    src: url(../fontes/zombie2.ttf);
+}
+.github-ico{
+  width: 50px;
+}
+nav a{
+  font-size: 140%;
+  font-family: "Titillium Web";
+  color: lightgray;
+}
+.theLast{
+  font-family: theLast;
+}
+p a, p span{
+  color: #fec107 !important;
+}
+.zombie-img{
+  width: 700px;
+}
+.img-d{
+  margin-left: 100px
+}
+.titulo{
+  letter-spacing: 10px;
+  line-height: 280px;
+  color: lightgray;
+}
+.titulo h2{
+  margin-right: -20px;
+}
+.texto p{
+  font-size: 30px;
+  color: lightgray;
+}
+.texto-e{
+  color: lightgray;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.texto-e p{
+  font-size: 30px;
+}
+.texto-e h2, .texto-d h2, .titulo h2{
+  font-size: 80px;
+  border-style: none none solid;
+  border-width: 6px;
+}
+.texto-d{
+  color: lightgray;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.texto-d p{
+  font-size: 30px;
+  }
+.texto-d h2{
+  font-size: 80px;
+}
+p, span, h1, h2, h3, h4, h5, h6{
+  font-family: "Titillium Web";
+}
+.amarelo{
+  color: #fec107 !important;
+}
+.bg-white{
+  background-color: white;
+}
+nav .bg-trans{
+  background: rgba(0, 0, 0, 0);
+}
+.hero-video-bg{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: .8;
+  overflow: hidden;
+}
+.overflow-video{
+  position: relative;
+}
