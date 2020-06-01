@@ -17,6 +17,9 @@ nav a{
 .theLast{
   font-family: theLast;
 }
+.d-flex h2{
+  font-size: 400%;
+}
 p a, p span{
   color: #fec107 !important;
 }
@@ -45,23 +48,17 @@ p a, p span{
 .texto-e{
   color: lightgray;
   margin-left: 10%;
-  margin-top: 5%;
-}
-.texto-e p{
-  font-size: 30px;
 }
 .texto-e h2, .texto-d h2, .titulo h2{
-  font-size: 80px;
   border-style: none none solid;
   border-width: 6px;
 }
 .texto-d{
   color: lightgray;
   margin-right: 10%;
-  margin-top: 5%;
 }
-.texto-d p{
-  font-size: 30px;
+.texto-d p, .texto-e p{
+  font-size: 190%;
   }
 .texto-d h2{
   font-size: 80px;
